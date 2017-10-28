@@ -1,17 +1,20 @@
 \ProvidesPackage{style}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
-\renewcommand{\c}[0]{\clubsuit}
-\renewcommand{\d}[0]{\diamondsuit}
-\newcommand{\h}[0]{\heartsuit}
-\newcommand{\s}[0]{\spadesuit}
+\renewcommand{\c}[0]{\includegraphics{./img/club.png}}
+\renewcommand{\d}[0]{\includegraphics{./img/diamond.png}}
+\newcommand{\h}[0]{\includegraphics{./img/heart.png}}
+\newcommand{\s}[0]{\includegraphics{./img/spade.png}}
 
-\newcommand{\minor}{\clubsuit/\diamondsuit}
-\newcommand{\major}{\heartsuit/\spadesuit}
+\newcommand{\minor}{\c/\d}
+\newcommand{\major}{\h/\s}
 
 \newcommand{\pass}{$PASS$}
 \newcommand{\dbl}{$DBL$}
 \newcommand{\rdbl}{$RDBL$}
-\newcommand{\ctr}[2]{$#1#2$}
+\newcommand{\ctr}[2]{\large{$#1#2$}}
 
 
 \newcommand{\auto}[2]{\emph{\textbf{AUTO:} \ctr{#1}{#2}}}
