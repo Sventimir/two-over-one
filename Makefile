@@ -1,5 +1,5 @@
 
-all: conventions.pdf
+all: system.pdf conventions.pdf
 
 clean:
 	rm -rf build *.pdf
