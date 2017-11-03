@@ -1,4 +1,4 @@
-# two-overo-one
+# Two-over-one
 
 This is a full description of two-over-one duplicate bridge bidding system as used by me and my partner.
 It is written in LaTeX and a Makefile is provided to ease the building process. It is configured to use
