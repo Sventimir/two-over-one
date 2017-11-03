@@ -3,12 +3,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
+%% Style
+
+\renewcommand{\labelitemi}{---}
+\renewcommand{\labelitemii}{---}
+\renewcommand{\labelitemiii}{---}
+
+%% Special words and symbols
+
 \newcommand{\system}{\emph{Two-over-one}}
 
-\renewcommand{\c}[0]{\includegraphics{./img/club.png}}
-\renewcommand{\d}[0]{\includegraphics{./img/diamond.png}}
-\newcommand{\h}[0]{\includegraphics{./img/heart.png}}
-\newcommand{\s}[0]{\includegraphics{./img/spade.png}}
+\renewcommand{\c}[0]{\includegraphics[scale=0.75]{./img/club.png}}
+\renewcommand{\d}[0]{\includegraphics[scale=0.75]{./img/diamond.png}}
+\newcommand{\h}[0]{\includegraphics[scale=0.75]{./img/heart.png}}
+\newcommand{\s}[0]{\includegraphics[scale=0.75]{./img/spade.png}}
 
 \newcommand{\minor}{\c/\d}
 \newcommand{\major}{\h/\s}
@@ -25,6 +33,10 @@
 \newcommand{\art}{\emph{artificial}}
 \newcommand{\pen}{\emph{penalty}}
 
+\newcommand{\no}{\textbf{no}}
+\newcommand{\ask}[1]{\emph{asking} for #1}
+\newcommand{\conv}[1]{\textbf{#1}}
+
 \newcommand{\opps}{\emph{opp's\/ suit}}
 \newcommand{\om}{\emph{other\/ major}}
 
@@ -38,4 +50,6 @@
 \newcommand{\wos}[1]{\emph{without #1 support}}
 \newcommand{\stopper}{\emph{stopper in opp's suit}}
 
-\newcommand{\suit}[2]{$#1$ #2}
+\newcommand{\suit}[2]{$#1$#2}
+
+\mathchardef\hyp="2D
