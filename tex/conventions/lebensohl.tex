@@ -1,23 +1,65 @@
-Lebensohl:
+\subsection{Lebensohl}
+\label{subsec:leben}
 
+\conv{Lebensohl} is mainly used in the following sequences:
 \begin{itemize}
   \item \sequence{1\nt\ --- (2\major) --- ?}
   \item \sequence{(2\major) --- \dbl\ --- (\pass) --- ?}
-  \item Responses:
-    \begin{itemize}
-      \item \pass/\dbl\ -- \pen
-      \item \ctr{2\s} -- \inv\ in \s
-      \item \ctr{2\nt} -- \art, forces to \auto{3}{\c}; then:
-        \begin{itemize}
-          \item \pass -- \so\ in \c
-          \item \ctr{3\d} -- \so\ in \d
-          \item \ctr{3\opps} -- \gf, \suit{3-}{} in \om, NO \stopper
-          \item \ctr{3\om} -- \gf\ in that suit
-          \item \ctr{3\nt} -- \gf, \suit{3-}{} in \om\ with \stopper
-        \end{itemize}
-      \item \ctr{3\minor} -- \inv\ in \minor
-      \item \ctr{3\opps} -- \gf, \suit{4}{} in \om, NO \stopper
-      \item \ctr{3\om} -- \inv\ in other major
-      \item \ctr{3\nt} -- \gf, \suit{4}{} in \om with \stopper
-    \end{itemize}
 \end{itemize}
+
+The basic approach is that we have a special bid of \ctr{2\nt}, which requests \emph{partner} to bid \ctr{3\c}
+automatically so that we can make further description. Partner may omit automatic response if he considers himself
+having extra values, however, he must be aware of the fact that \ctr{2\nt} \emph{bidder} might only have been preparing
+a \so\/ in certain suit and might not be interested in playing another.
+
+After such \emph{opponent's} intervention there are 4 \emph{types} of bids we might want to make and 3 different \emph{intentions}
+we might have in mind:
+
+\begin{center}
+  \newcommand{\head}[1]{\emph{\underline{#1}}}
+
+  \begin{tabular}{lll}
+    \head{type of a bid}    & \hspace{5cm}  & \head{intention} \\
+
+    below opponent's suit   &               & \so     \\
+    opponents suit          &               & \inv    \\
+    above opponent's suit   &               & \gf     \\
+    no trump                &               &         \\
+  \end{tabular}
+\end{center}
+
+\dbl\/ is always \pen\/ (as is \pass\/ to \emph{partner's} \dbl\/ of course).
+
+Bidding a new suit (or \pass\/ to automatic \ctr{3\c}) declares willingness to play that suit with the intention shown
+in the table to the left.
+
+Bidding \emph{opponent's} suit or \nt\ declares willingness to play \nt\ with or without the possibility to play an
+unbid major suit, as shown in the table to the right.
+
+\begin{center}
+  \renewcommand{\nt}{NT}
+  \renewcommand{\ctr}[1]{#1}
+  \newcommand{\leben}[1]{\ctr{2\nt}/\ctr{#1}}
+  \newcommand{\direct}[1]{\ctr{#1}}
+  \small
+
+  \begin{tabular}{|c|c|c|}
+    \hline
+          & below               & above               \\
+    \hline
+    \so   & \ctr{2\nt}/\ctr{3X} & \ctr{2X}            \\
+    \inv  & \ctr{3X}            & \ctr{3X}            \\
+    \gf   & ---                 & \ctr{2\nt}/\ctr{3X} \\
+    \hline
+  \end{tabular}
+  \quad
+  \begin{tabular}{|c|c|c|}
+    \hline
+                & with \suit{4}{\major}   & without \suit{4}{\major}  \\
+    \hline
+    stopper    & \leben{3\nt}            & \direct{3\nt}             \\
+    no stopper & \leben{3 opp's suit}    & \direct{3 opp's suit}     \\
+    \hline
+  \end{tabular}
+
+\end{center}
