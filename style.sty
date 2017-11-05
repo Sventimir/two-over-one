@@ -60,6 +60,7 @@
 \newcommand{\nf}{\emph{non-forcing}}
 \newcommand{\force}{\emph{forcing one round}}
 \newcommand{\gf}{\emph{game forcing}}
+\newcommand{\rev}{\emph{reverse}}
 
 \newcommand{\semi}{\emph{semi-}}
 \newcommand{\ws}[1]{
@@ -69,7 +70,13 @@
         \emph{with #1 support}
     \fi
 }
-\newcommand{\wos}[1]{\emph{without #1 support}}
+\newcommand{\wos}[1]{
+    \ifx\relax#1\relax
+        \emph{without support}
+    \else
+        \emph{without #1 support}
+    \fi
+}
 \newcommand{\stopper}{\emph{stopper in opp's suit}}
 \newcommand{\sol}{\emph{solid}}
 \newcommand{\bal}{\emph{ballanced}}
